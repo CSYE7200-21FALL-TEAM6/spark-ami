@@ -38,10 +38,17 @@
             "inline": [
                 "sudo apt-get update",
                 "sudo apt-get update",
+                "sudo apt-get install git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev nodejs yarn -y",
+                "sudo apt-get install libmysqlclient-dev -y",
+                "sudo apt-get install ruby-full -y",
+                "sudo apt-get install wget -y",
                 "wget https://csye7200-team5-config.s3.amazonaws.com/installer/spark-3.2.0-bin-hadoop3.2-scala2.13.tgz",
                 "tar zxvf spark-3.2.0-bin-hadoop3.2-scala2.13.tgz",
                 "rm spark-3.2.0-bin-hadoop3.2-scala2.13.tgz",
-                "sudo apt-get install openjdk-8-jdk -y"
+                "sudo apt-get install openjdk-8-jdk -y",
+                "wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install",
+                "chmod +x ./install",
+                "sudo ./install auto > /tmp/logfile"
             ]
         }
     ]
